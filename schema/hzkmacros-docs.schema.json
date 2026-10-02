@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HzkMacros Module Documentation v1",
+  "type": "object",
+  "required": ["schemaVersion", "moduleId", "entries"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "moduleId": { "type": "string", "pattern": "^[a-z][a-z0-9_]{2,63}$" },
+    "language": { "enum": ["en_us", "pt_br"] },
+    "entries": {
+      "type": "array", "maxItems": 256,
+      "items": {
+        "type": "object",
+        "required": ["kind", "name", "description"],
+        "properties": {
+          "kind": { "enum": ["action", "variable", "event", "iterator", "service", "feature", "guide"] },
+          "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+          "syntax": { "type": "string", "maxLength": 250 },
+          "category": { "type": "string", "maxLength": 80 },
+          "description": { "type": "string", "minLength": 1, "maxLength": 2048 },
+          "details": { "type": "string", "maxLength": 8192 },
+          "example": { "type": "string", "maxLength": 8192 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

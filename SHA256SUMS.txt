@@ -1,0 +1,7 @@
+155c7c941caf55425cb86e7773b0ad65b36a519d63805f1531d066ba4e62abd4  api/hzkmacros-module-api-4.0.jar
+c585604d1608cd2561ad9eaad5f835e22b0e4bf52bb51c779afb68e364664642  api/hzkmacros-module-api-4.0-sources.jar
+2f27c099c1eefa972911120470ed429dc7717e64086dead52de0ec6d1268cfa6  api/hzkmacros-module-api-4.0-javadoc.jar
+09463649498241f23debb31236d699e45dd7f15f316f4d51044ffa69537654fd  schema/hzkmacros-module.schema.json
+538d70b0fa53c3d0b519e58d9fa6426b35364386eee7972c3fd1053295019f12  schema/hzkmacros-docs.schema.json
+3c212ee44d639c9a1f955e5bc9ba0926bf3c79d7aafc3b6a2bce63b96273aae0  tools/verify_module.py
+792a344bf12f537815b60c3dfec0914d3770351b3390e82dae9dbea14eff7230  assets/hzkmacros-icon.png

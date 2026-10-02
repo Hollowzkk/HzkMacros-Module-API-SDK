@@ -1,0 +1,20 @@
+HzkMacros Module API & SDK — public developer kit
+Project: https://hzkmacros.com
+
+Included:
+- Module API v4 binary (compileOnly)
+- public API sources and Javadocs
+- self-contained First / Advanced / Provider / Consumer examples
+- Gradle Wrapper for every example
+- module manifest and documentation JSON schemas
+- offline verifier + verifier tests
+- public API/developer documentation
+- module author policy
+- public HzkMacros icon used by the repository README
+
+Not included:
+- HzkMacros proprietary core source
+- private runtime/loader implementation classes
+- client GUI implementation
+- Mixins or private Minecraft integration code
+- obfuscation/build internals of the HzkMacros core
