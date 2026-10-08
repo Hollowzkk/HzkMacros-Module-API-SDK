@@ -40,13 +40,15 @@ Com a Module API pública, desenvolvedores podem criar extensões próprias para
 
 | Componente | Alvo |
 |---|---|
-| HzkMacros | `0.26.0-beta.60+` |
+| HzkMacros | `0.26.0-beta.94+` |
 | Module API | **v4** |
 | Minecraft | **1.21.1** |
 | Loader | **Fabric** |
 | Java | **21** |
 
 A Module API possui versionamento próprio para permitir que módulos de terceiros declarem compatibilidade de forma clara.
+
+> **A API v4 está congelada para o host beta.94.** Mudanças incompatíveis exigem uma futura versão major da API.
 
 ## Comece aqui
 

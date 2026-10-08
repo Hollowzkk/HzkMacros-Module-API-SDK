@@ -1,0 +1,9 @@
+{
+  "schemaVersion":1,
+  "moduleId":"hello_provider",
+  "language":"pt_br",
+  "entries":[
+    {"kind":"action","name":"PROVIDERHELLO","syntax":"PROVIDERHELLO(<name>);","category":"Provider","description":"Uses the provider greeting service.","example":"PROVIDERHELLO(\"Steve\");"},
+    {"kind":"service","name":"greeting","category":"Integration","description":"Exports com.example.provider.api.GreetingService to declared module dependencies."}
+  ]
+}

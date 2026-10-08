@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "first_module",
+  "language": "pt_br",
+  "entries": [
+    {
+      "kind": "action",
+      "name": "HELLO",
+      "syntax": "HELLO(<nome>);",
+      "category": "First Module",
+      "description": "Escreve uma saudação no log da macro.",
+      "example": "HELLO(\"Steve\");"
+    },
+    {
+      "kind": "variable",
+      "name": "&first_module_status",
+      "syntax": "%&first_module_status%",
+      "category": "First Module",
+      "description": "Estado somente leitura do módulo.",
+      "example": "LOG(%&first_module_status%);"
+    }
+  ]
+}

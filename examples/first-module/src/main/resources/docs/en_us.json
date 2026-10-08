@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "first_module",
+  "language": "en_us",
+  "entries": [
+    {
+      "kind": "action",
+      "name": "HELLO",
+      "syntax": "HELLO(<name>);",
+      "category": "First Module",
+      "description": "Writes a greeting to the macro log.",
+      "example": "HELLO(\"Steve\");"
+    },
+    {
+      "kind": "variable",
+      "name": "&first_module_status",
+      "syntax": "%&first_module_status%",
+      "category": "First Module",
+      "description": "Read-only module status.",
+      "example": "LOG(%&first_module_status%);"
+    }
+  ]
+}

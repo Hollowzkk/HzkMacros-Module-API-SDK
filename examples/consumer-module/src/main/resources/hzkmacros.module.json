@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "hello_consumer",
+  "name": "Hello Consumer",
+  "version": "1.0.0",
+  "author": "ExampleDeveloper",
+  "apiVersion": 4,
+  "hzkmacrosVersion": ">=0.26.0-beta.94",
+  "entrypoint": "com.example.consumer.HelloConsumerModule",
+  "documentation": {"en_us":"docs/en_us.json","pt_br":"docs/pt_br.json"},
+  "dependencies": {
+    "fabricMods":[],
+    "optionalFabricMods":[],
+    "modules":[{"id":"hello_provider","version":">=1.0.0"}],
+    "optionalModules":[]
+  }
+}

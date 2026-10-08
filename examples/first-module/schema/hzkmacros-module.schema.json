@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HzkMacros Module Manifest v1",
+  "type": "object",
+  "required": ["id", "name", "version", "entrypoint", "apiVersion"],
+  "$defs": {
+    "moduleId": { "type": "string", "pattern": "^[a-z][a-z0-9_]{2,63}$" },
+    "fabricId": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_.-]{0,127}$" },
+    "versionPredicate": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "moduleDependency": {
+      "oneOf": [
+        { "$ref": "#/$defs/moduleId" },
+        {
+          "type": "object",
+          "required": ["id"],
+          "properties": {
+            "id": { "$ref": "#/$defs/moduleId" },
+            "version": { "$ref": "#/$defs/versionPredicate" }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "fabricDependency": {
+      "oneOf": [
+        { "$ref": "#/$defs/fabricId" },
+        {
+          "type": "object",
+          "required": ["id"],
+          "properties": {
+            "id": { "$ref": "#/$defs/fabricId" },
+            "version": { "$ref": "#/$defs/versionPredicate" }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "$ref": "#/$defs/moduleId" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "version": { "type": "string", "minLength": 1, "maxLength": 64 },
+    "author": { "type": "string", "maxLength": 100 },
+    "apiVersion": { "enum": [1, 2, 3, 4] },
+    "hzkmacrosVersion": { "$ref": "#/$defs/versionPredicate" },
+    "entrypoint": {
+      "type": "string",
+      "maxLength": 200,
+      "pattern": "^[A-Za-z_$][A-Za-z0-9_$]*(\\.[A-Za-z_$][A-Za-z0-9_$]*)+$"
+    },
+    "documentation": {
+      "type": "object",
+      "properties": {
+        "en_us": { "type": "string", "pattern": "^docs/[A-Za-z0-9_/-]{1,128}\\.json$" },
+        "pt_br": { "type": "string", "pattern": "^docs/[A-Za-z0-9_/-]{1,128}\\.json$" }
+      },
+      "additionalProperties": false
+    },
+    "dependencies": {
+      "type": "object",
+      "properties": {
+        "fabricMods": {
+          "type": "array", "maxItems": 64,
+          "items": { "$ref": "#/$defs/fabricDependency" }
+        },
+        "optionalFabricMods": {
+          "type": "array", "maxItems": 64,
+          "items": { "$ref": "#/$defs/fabricDependency" }
+        },
+        "modules": {
+          "type": "array", "maxItems": 32,
+          "items": { "$ref": "#/$defs/moduleDependency" }
+        },
+        "optionalModules": {
+          "type": "array", "maxItems": 32,
+          "items": { "$ref": "#/$defs/moduleDependency" }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

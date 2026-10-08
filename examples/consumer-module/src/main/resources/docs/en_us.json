@@ -1,0 +1,8 @@
+{
+  "schemaVersion":1,
+  "moduleId":"hello_consumer",
+  "language":"en_us",
+  "entries":[
+    {"kind":"action","name":"CONSUMERHELLO","syntax":"CONSUMERHELLO(<name>);","category":"Consumer","description":"Calls the GreetingService exported by hello_provider.","example":"CONSUMERHELLO(\"Steve\");"}
+  ]
+}

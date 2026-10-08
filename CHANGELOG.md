@@ -1,5 +1,12 @@
 # HzkMacros Module API SDK — Changelog
 
+## SDK v4 / beta.94 host compatibility sync
+
+- keeps the Module API v4 binary/source contract unchanged;
+- updates the documented HzkMacros host floor and all official example manifests to `>=0.26.0-beta.94`;
+- keeps Minecraft 1.21.1 / Fabric / Java 21 as the current public target;
+- public SDK remains MIT; third-party modules remain owned/licensed by their respective authors.
+
 ## SDK v4 public kit
 
 - Added self-contained Gradle Wrapper to all examples.

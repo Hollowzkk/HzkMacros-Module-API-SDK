@@ -89,7 +89,7 @@ Todo módulo precisa de `src/main/resources/hzkmacros.module.json`:
   "version": "1.0.0",
   "author": "YourName",
   "apiVersion": 4,
-  "hzkmacrosVersion": ">=0.26.0-beta.60",
+  "hzkmacrosVersion": ">=0.26.0-beta.94",
   "entrypoint": "com.example.firstmodule.FirstModule",
   "documentation": {
     "en_us": "docs/en_us.json",

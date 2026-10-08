@@ -40,13 +40,15 @@ With the public Module API, developers can create their own extensions for HzkMa
 
 | Component | Target |
 |---|---|
-| HzkMacros | `0.26.0-beta.60+` |
+| HzkMacros | `0.26.0-beta.94+` |
 | Module API | **v4** |
 | Minecraft | **1.21.1** |
 | Loader | **Fabric** |
 | Java | **21** |
 
 The Module API is versioned independently from HzkMacros so third-party modules can declare a clear compatibility contract.
+
+> **API v4 is frozen for the beta.94 host target.** Breaking changes require a future major API version.
 
 ## Start here
 

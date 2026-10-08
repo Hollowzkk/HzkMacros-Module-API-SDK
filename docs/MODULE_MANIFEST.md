@@ -10,7 +10,7 @@ Todo módulo precisa de um manifesto na raiz do JAR.
   "version": "1.4.0",
   "author": "ExampleDeveloper",
   "apiVersion": 4,
-  "hzkmacrosVersion": ">=0.26.0-beta.60",
+  "hzkmacrosVersion": ">=0.26.0-beta.94",
   "entrypoint": "com.example.inventory.InventoryToolsModule",
   "documentation": {
     "en_us": "docs/en_us.json",

@@ -17,7 +17,7 @@ No manifesto:
 
 ```json
 "apiVersion": 4,
-"hzkmacrosVersion": ">=0.26.0-beta.60"
+"hzkmacrosVersion": ">=0.26.0-beta.94"
 ```
 
 Declare a menor API que seu módulo realmente exige. Se usar scheduler/introspecção v4, declare `4`.

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "advanced_module",
+  "language": "en_us",
+  "entries": [
+    {"kind":"action","name":"ADVANCEDPING","syntax":"ADVANCEDPING(<message>);","category":"Advanced","description":"Advanced API v4 example.","example":"ADVANCEDPING(\"hello\");"},
+    {"kind":"variable","name":"&advanced_status","syntax":"%&advanced_status%","category":"Advanced","description":"Read-only status."},
+    {"kind":"iterator","name":"advanced_samples","syntax":"FOREACH(advanced_samples);","category":"Advanced","description":"Two sample rows."},
+    {"kind":"event","name":"advanced_ping","syntax":"WAITEVENT(advanced_ping,100);","category":"Advanced","description":"Emitted by ADVANCEDPING."}
+  ]
+}
