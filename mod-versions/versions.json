@@ -2,7 +2,19 @@
   "schemaVersion": 2,
   "modId": "hzkmacros",
   "versions": {
-    "1.21.0": [],
-    "1.21.1": []
+    "1.21.0": [
+      {
+        "version": "1.0.1-beta+mc1.21.0",
+        "channel": "beta",
+        "url": "https://github.com/Hollowzkk/HzkMacros-Module-API-SDK"
+      }
+    ],
+    "1.21.1": [
+      {
+        "version": "1.0.1-beta+mc1.21.1",
+        "channel": "beta",
+        "url": "https://github.com/Hollowzkk/HzkMacros-Module-API-SDK"
+      }
+    ]
   }
 }
